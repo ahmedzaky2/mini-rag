@@ -118,7 +118,7 @@ async def process_endpoint(request: Request, project_id: str, process_request: P
             return JSONResponse(
                 status_code=status.HTTP_400_BAD_REQUEST,
                 content={
-                    "signal": ResponseSignal.FILE_ID_ERROR.value,
+                    "signal": ResponseSignal.NO_FILES_ERROR.value,
                 }
             )
 
